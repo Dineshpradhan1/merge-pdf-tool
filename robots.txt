@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://merge-pdf-tool.netlify.app/sitemap.xml
+Sitemap: https://smart-pdf-tool.netlify.app/sitemap.xml
