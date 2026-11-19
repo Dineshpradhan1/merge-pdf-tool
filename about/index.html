@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <meta name="color-scheme" content="light dark" />
 <link rel="icon" href="data:," />
-<title>About — Merge PDF Tool</title>
-<meta name="description" content="About Merge PDF Tool: free, simple, private PDF tools that run 100% in your browser. Merge PDFs into one file, or split a PDF into the pages you need. No sign-up, no watermark, and your files are never uploaded." />
+<title>About — Smart PDF Tools</title>
+<meta name="description" content="About Smart PDF Tools: free, simple, private PDF tools that run 100% in your browser. Merge, Split and Compress PDFs. No sign-up, no watermark, and your files are never uploaded." />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="About — Merge PDF Tool" />
+<meta property="og:title" content="About — Smart PDF Tools" />
 <meta property="og:description" content="Free, simple, private PDF tools that run 100% in your browser. No sign-up, no watermark, and your files are never uploaded." />
 <meta property="og:url" content="https://merge-pdf-tool.netlify.app/about/" />
 <meta property="og:image" content="https://merge-pdf-tool.netlify.app/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Merge PDF — Combine PDFs Free in Your Browser" />
+<meta property="og:image:alt" content="Smart PDF Tools — Merge, Split &amp; Compress PDFs free in your browser" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +47,7 @@ a{color:var(--red)}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
 .topbar{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 88%, transparent);backdrop-filter:blur(14px) saturate(1.4);border-bottom:1px solid var(--line)}
 .topbar-in{height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-family:"Archivo",sans-serif;font-weight:900;font-size:21px;letter-spacing:-.04em}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink);font-family:"Archivo",sans-serif;font-weight:900;font-size:19px;letter-spacing:-.04em}
 .logo-mark{width:40px;height:40px;border-radius:11px;background:var(--red);color:#fff;display:grid;place-items:center;box-shadow:0 8px 18px var(--red-glow);position:relative;overflow:hidden}
 .logo-mark:after{content:"";position:absolute;right:0;top:0;width:14px;height:14px;background:rgba(255,255,255,.28);clip-path:polygon(0 0,100% 100%,0 100%)}
 .logo-mark svg{width:20px;height:20px}
@@ -67,7 +67,7 @@ a{color:var(--red)}
 .panel h3{font-size:18px;font-weight:800;margin:0 0 6px}
 .panel p{color:var(--ink-2);margin:0 0 12px}
 .panel p:last-child{margin-bottom:0}
-.tool-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+.tool-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
 .tool-card{display:block;border:1px solid var(--line);border-radius:20px;padding:24px;background:var(--surface);box-shadow:var(--shadow-sm);text-decoration:none;color:var(--ink)}
 .tool-card:hover{border-color:var(--red)}
 .tool-card h3{font-size:20px;margin-bottom:6px}
@@ -80,7 +80,7 @@ footer a{color:var(--ink-2)}
 @media(max-width:640px){
   .nav a:not(.nav-cta){display:none}
   .page{padding-top:38px}
-  .logo{font-size:19px}.logo-mark{width:36px;height:36px}
+  .logo{font-size:17px}.logo-mark{width:36px;height:36px}
   .nav-cta{padding:10px 14px!important;font-size:13.5px}
 }
 </style>
@@ -89,15 +89,16 @@ footer a{color:var(--ink-2)}
 <body>
 <header class="topbar">
   <div class="wrap topbar-in">
-    <a class="logo" href="/" aria-label="MergePDF home">
+    <a class="logo" href="/" aria-label="Smart PDF Tools home">
       <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/><path d="M9 9l6 6M15 9l-6 6"/></svg></span>
-      <span>Merge<em>PDF</em></span>
+      <span>Smart <em>PDF</em> Tools</span>
     </a>
     <nav class="nav">
       <a href="/">Merge PDF</a>
       <a href="/split-pdf/">Split PDF</a>
+      <a href="/compress-pdf/">Compress PDF</a>
       <a href="/privacy-policy/">Privacy Policy</a>
-      <a href="/" class="nav-cta">Merge now — free</a>
+      <a href="/" class="nav-cta">Try a tool — free</a>
     </nav>
   </div>
 </header>
@@ -106,12 +107,12 @@ footer a{color:var(--ink-2)}
   <section class="page">
     <div class="kicker">About</div>
     <h1>Free PDF tools, made simple and private.</h1>
-    <p class="lede">Merge PDF Tool is a small, free website for everyday PDF jobs. No accounts, no sign-up, no watermark, and no waiting for a server — the tools run <strong>100% in your browser</strong>, so your files are never uploaded and never stored.</p>
+    <p class="lede">Smart PDF Tools is a small, free website for everyday PDF jobs. No accounts, no sign-up, no watermark, and no waiting for a server — the tools run <strong>100% in your browser</strong>, so your files are never uploaded and never stored.</p>
 
     <div class="panel">
       <h2>Why this site exists</h2>
       <p>Most PDF tools ask you to upload your documents to a server, create an account, or pay before you can do anything. We wanted the opposite: open the page, do the job, download the result, and close the tab. Nothing about your files stays behind.</p>
-      <p>That is why the tools are built on the open-source pdf-lib engine, which runs entirely in your browser. Merging and splitting happen on your own device — not on a server somewhere else.</p>
+      <p>That is why the tools are built on the open-source pdf-lib engine (and pdf.js for reading pages when compressing), which runs entirely in your browser. Merging, splitting and compressing happen on your own device — not on a server somewhere else.</p>
     </div>
 
     <div class="tool-cards">
@@ -123,11 +124,15 @@ footer a{color:var(--ink-2)}
         <h3>Split PDF <span>→</span></h3>
         <p>Split a PDF by page range, save every page as its own file, or extract only the pages you need.</p>
       </a>
+      <a class="tool-card" href="/compress-pdf/">
+        <h3>Compress PDF <span>→</span></h3>
+        <p>Shrink a PDF that is too big to send, keep the same pages.</p>
+      </a>
     </div>
 
     <div class="panel">
       <h2>What you can expect</h2>
-      <p><strong>Free.</strong> Both tools are free to use, with no file-count cap set by this site and no daily limit.</p>
+      <p><strong>Free.</strong> All three tools are free to use, with no file-count cap set by this site and no daily limit.</p>
       <p><strong>Private.</strong> Your files are never uploaded, never stored, and never seen by us. Close the tab and nothing is stored anywhere.</p>
       <p><strong>Simple.</strong> Drop a file, choose what to do, download the result. It works on phone and computer, with nothing to install.</p>
       <p>Read the full details in our <a href="/privacy-policy/">Privacy Policy</a>.</p>
@@ -138,12 +143,12 @@ footer a{color:var(--ink-2)}
       <p>Questions, or an idea for the next tool? Email <a href="mailto:dineshpradhan9844@gmail.com">dineshpradhan9844@gmail.com</a>.</p>
     </div>
 
-    <p style="margin-top:28px"><a class="btn" href="/">Try Merge PDF →</a></p>
+    <p style="margin-top:28px"><a class="btn" href="/">Try Smart PDF Tools →</a></p>
   </section>
 
   <footer>
-    <div><strong style="color:var(--ink-2)">MergePDF</strong> — free, private, in-browser PDF tools. Built with <a href="https://pdf-lib.js.org/" target="_blank" rel="noopener">pdf-lib</a>.</div>
-    <div style="margin-top:6px"><a href="/">Merge PDF</a> · <a href="/split-pdf/">Split PDF</a> · <a href="/privacy-policy/">Privacy Policy</a> · <a href="/about/">About</a></div>
+    <div><strong style="color:var(--ink-2)">Smart PDF Tools</strong> — free, private, in-browser PDF tools. Built with <a href="https://pdf-lib.js.org/" target="_blank" rel="noopener">pdf-lib</a>.</div>
+    <div style="margin-top:6px"><a href="/">Merge PDF</a> · <a href="/split-pdf/">Split PDF</a> · <a href="/compress-pdf/">Compress PDF</a> · <a href="/privacy-policy/">Privacy Policy</a> · <a href="/about/">About</a></div>
   </footer>
 </main>
 </body>
